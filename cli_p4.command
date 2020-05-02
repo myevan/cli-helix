@@ -3,4 +3,4 @@ if [ ! -f bin/p4 ]; then
     chmod 700 bin/p4
 fi
 
-bin/p4 $*
+bin/p4 -C auto $*
