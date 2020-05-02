@@ -8,7 +8,7 @@ fi
 
 if [ ! -d data ]; then
     mkdir data
-    bin/p4d -r data -L var\log -J var\journal -xi $*
+    ./cli_p4d.sh -r data -L var\log -J var\journal -xi $*
 fi
 
-bin/p4d -r data -L var\log -J var\journal $* 
+./cli_p4d.sh -r data -L var\log -J var\journal $* 
